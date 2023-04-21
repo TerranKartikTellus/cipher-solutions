@@ -42,7 +42,7 @@ const validatePassword = (value) => {
 
   return (
     <div className='bg-gray-900 h-full relative text-gray-100 overflow-hidden flex flex-col items-center justify-center'>
-       <img className='w-fullh-full pt-[90px] opacity-50 rounded-2xl ' src='/img4.png'></img>
+       <img className='w-fullh-full pt-[90px] opacity-50 rounded-2xl ' src='/img1.png'></img>
      
       <form onSubmit={handleSubmit(onSubmit)} className='absolute top-40  left-0 w-full mx-auto tracking-wider flex flex-col items-center justify-center' >
         <div><img src="/ico.png" className="w-8 h-8"></img></div>
