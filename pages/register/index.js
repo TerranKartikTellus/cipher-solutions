@@ -71,7 +71,7 @@ const validatePassword = (value) => {
           {/* Password: */}
           <input className='w-3/12 bg-transparent p-3 text-xl outline-none border-[2px] border-orange-400 rounded-2xl mx-auto' placeholder="Password" type="password" {...register('password', { required: true ,validate: validatePassword })} />
         {/* </label> */}
-        {errors.password && <span>This field is required</span>}
+        {errors.password && <span>This field is required with length {'>'}= 6</span>}
         <br />
       <p>Already have an account? <a href="#" onClick={handleLogin}>Log in</a></p>
         <button  type="submit" className={`${submitting ? 'bg-red-500':'bg-blue-400'} bg-orange-400 my-3 w-3/12 p-3`} disabled={submitting}>Register</button>

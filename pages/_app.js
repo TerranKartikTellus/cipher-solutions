@@ -4,15 +4,15 @@ import Link from 'next/link';
 export default function App({ Component, pageProps }) {
 
 
-  return <main className="bg-gray-900  text-gray-900 min-h-screen w-full  ">
-    <div className='bg-gray-800 fixed top-0 left-0 w-full h-[60px] p-3 border-b-2 border-gray-600'><Nav></Nav></div>
+  return <main className="bg-white  text-gray-900 min-h-screen w-full  ">
+    {/* <div className='bg-gray-800 fixed top-0 left-0 w-full h-[60px] p-3 border-b-2 border-gray-600'><Nav></Nav></div>
     <div className=' pt-[60px] flex flex-row items-start justify-start h-screen'>
       <div className=' bg-gray-800 text-gray-100 py-4 px-1 h-full bg-blue-200 w-[60px] border-r-2 border-gray-600'><SideNav></SideNav></div>
-      <div className='h-full bg-blue-100 w-full'>
+      <div className='h-full bg-blue-100 w-full'> */}
         <Component {...pageProps} />
-      </div>
+      {/* </div>
     </div>
-    
+     */}
      
     </main>
 }
@@ -25,7 +25,7 @@ function Nav(){
      <div className='flex flex-row items-center justify-center space-x-6'>
       <div className=''><svg className='w-8 h-8  fill-white' width="21" height="15" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 18.3333C0 19.2538 0.746191 20 1.66667 20H12.3333C13.2538 20 14 19.2538 14 18.3333C14 17.4129 13.2538 16.6667 12.3333 16.6667H1.66667C0.746191 16.6667 0 17.4129 0 18.3333ZM0 10C0 10.9205 0.746191 11.6667 1.66667 11.6667H26.3333C27.2538 11.6667 28 10.9205 28 10C28 9.07952 27.2538 8.33333 26.3333 8.33333H1.66667C0.746193 8.33333 0 9.07952 0 10ZM0 1.66667C0 2.58714 0.746191 3.33333 1.66667 3.33333H26.3333C27.2538 3.33333 28 2.58714 28 1.66667C28 0.746192 27.2538 0 26.3333 0L1.66667 0C0.746193 0 0 0.746192 0 1.66667Z" fill="var(--text-color)"  ></path></svg></div>
       <div><img src="/ico.png" className="w-8 h-8"></img></div>
-      <div className='font-bold text-2xl text-white tracking-wider'>CipherSchools</div>
+      <a href='/' className='font-bold text-2xl text-white tracking-wider'>CipherSchools</a>
       <div className='flex flex-row items-center justify-center space-x-2'>
           <div><svg className="fill-white/90 w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-.791 11.438l-1.613 4.014 3.112-2.885 1.586-3.957-3.085 2.828zm.835 1.094c-.289.043-.559-.157-.601-.446-.043-.289.157-.558.447-.6.29-.042.56.157.603.446s-.159.558-.449.6zm-2.199-6.892c0-.353.371-.64.828-.64.456 0 .828.288.828.64 0 .138-.057.266-.153.371l-.143-.208.054-.163c0-.216-.269-.399-.586-.399s-.586.183-.586.399c0 .134.103.255.256.328l-.053.24c-.265-.107-.445-.322-.445-.568zm.546 7.154l-2.082-.027 1.912-.905c.017-.23.077-.448.175-.646l-.886-.915 1.193.478c.132-.137.286-.252.456-.34l.111-2.071.859 1.881-.293.27c-.926.076-1.559.988-1.288 1.881l-.157.394zm1.568-6.668c-.239 0-.476.014-.707.042-.088-.232-.269-.442-.51-.388-.244.054-.308.318-.304.542-2.553.669-4.438 2.986-4.438 5.741 0 3.279 2.668 5.937 5.959 5.937s5.959-2.658 5.959-5.937c0-3.279-2.668-5.937-5.959-5.937zm1.294 10.614l-.396-.584-.1.692c-2.612.428-4.997-1.275-5.548-3.712l.529-.337-.612-.159c-.301-2.542 1.391-4.748 3.697-5.294l.325.507.119-.59c2.514-.354 4.763 1.243 5.386 3.515l-.513.402.615.055c.438 2.543-1.171 4.869-3.502 5.505zm2.26-5.432l-1.823.872c-.021.172-.065.336-.132.489l.924.946-1.215-.49c-.14.158-.308.291-.496.391l-.048 2.104-.905-1.882.326-.302c.884-.111 1.478-.986 1.231-1.852l.146-.365 1.992.089z"/></svg></div>
           <h1 className='font- text-sm text-white tracking-wider'>Browse</h1>
